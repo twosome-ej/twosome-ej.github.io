@@ -1,18 +1,173 @@
 /*main.css*/
 
+    .main_banner{
+        width: 100%;
+        height: 600px;
+        background-image: url(../img/banner/main_banner_02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+.reco_news_box{
+        background-color: #333;
+        
+        padding: 20px;
+        color: #fff;
+    position: static;
+        
+    }
+    .reco_news_box>div{
+      margin-bottom: 30px;
+    }
+    .reco_news_box>div h2{
+        line-height: 45px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .reco_news_box .reco_wrapper ul{
+        padding: 0 15px;
+    }
+    .reco_news_box .reco_wrapper li{
+       float: left;
+        text-align: center;
+        
+        width: 33.333%;
+    }
+    .reco_news_box .reco_wrapper li img,.reco_news_box .reco_wrapper li span{
+       display: block;
+       white-space: pre-line;
+        
+    }
+    .reco_news_box .reco_wrapper li img{
+       margin: auto;
+        width: 60px;
+        
+    }
+    
+    .reco_news_box .reco_wrapper li span{
+     font-size: 11px;
+        color: #d0d0d0;
+        
+    }
+    
+    .reco_news_box .news_wrapper ul{
+       margin-left: 20px;
+    }
+    .reco_news_box .news_wrapper li{
+        list-style:circle;
+    font-size: 13px;
+    padding: 5px 0;
+        font-weight: 100;
+        
+    }
+    
+    .reco_news_box .news_wrapper li a{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 90%;
+            display: block;
+        
+    } 
+    
+
 
 /*mobile*/
 
 @media screen and (max-width: 599px){
-    
+
+        
 }
 
 /*tab*/
 @media screen and (min-width:600px) and (max-width:1023px){
-    
+       
 }
 
 /*pc*/
 @media screen and (min-width:1024px){
+
+    .main_section{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .main_banner{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/banner/main_banner_02.jpg);
+        background-size: cover;
+        background-position:right;
+        background-repeat: no-repeat;
+    }
+    .reco_news_box{
+        background-color: rgba(0, 0, 0, 0.37);
+        width: 350px;
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        margin-top: -180px;
+        padding: 20px;
+        color: #fff;
+        
+    }
+    .reco_news_box>div{
+      margin-bottom: 30px;
+    }
+    .reco_news_box>div h2{
+        line-height: 45px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .reco_news_box .reco_wrapper ul{
+        padding: 0 15px;
+    }
+    .reco_news_box .reco_wrapper li{
+       float: left;
+        text-align: center;
+        
+        width: 33.333%;
+    }
+    .reco_news_box .reco_wrapper li img,.reco_news_box .reco_wrapper li span{
+       display: block;
+       white-space: pre-line;
+        
+    }
+    .reco_news_box .reco_wrapper li img{
+       margin: auto;
+        width: 60px;
+        
+    }
+    
+    .reco_news_box .reco_wrapper li span{
+     font-size: 11px;
+        color: #d0d0d0;
+        
+    }
+    
+    .reco_news_box .news_wrapper ul{
+       margin-left: 20px;
+    }
+    .reco_news_box .news_wrapper li{
+        list-style:circle;
+    font-size: 13px;
+    padding: 5px 0;
+        font-weight: 100;
+        
+    }
+    
+    .reco_news_box .news_wrapper li a{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 90%;
+        display: block;
+        
+    }
+    
+    
     
 }   
