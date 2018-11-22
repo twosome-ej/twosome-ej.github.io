@@ -164,10 +164,13 @@
     <script type="text/javascript" src="js/nav.js"></script>
     <script>
      function scrollmove(e){
-         var this_index = $(e).index()+1;
+         var this_index = $(e).index();
+         
          $('.banner_box').animate({
-        scrollTop: $(".banner"+this_index).offset().top},
+        scrollTop: $(window).height() * this_index},
         'slow');
+         
+         
          $('.main_banner_nav li').not(e).css({backgroundColor:'#fff'});
          $(e).css({backgroundColor:'#dd0330'});
      }
