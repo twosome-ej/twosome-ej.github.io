@@ -1,9 +1,10 @@
 /*reset.css*/
 
 html,body {
-    width: 100%;
+  
     height: 100%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 html,body,h1,h2,h3,h4,h5,h6,div,p,pre,img,ul,ol,li,dt,dd,dl,form,fieldet,legend,table,tr,td,th,input,button,textarea,iframe,em {

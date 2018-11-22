@@ -3,12 +3,22 @@
     .main_banner{
         width: 100%;
         height: 600px;
-        background-image: url(../img/banner/main_banner_02.jpg);
+      
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         
     }
+.main_banner_nav{
+    display: none;
+}
+    .banner1{
+        background-image: url(../img/banner/main_banner_01.jpg);}
+    .banner2{
+        background-image: url(../img/banner/main_banner_02.jpg);}
+    .banner3{
+        background-image: url(../img/banner/main_banner_03.jpg);}
+    
 .reco_news_box{
         background-color: #333;
         
@@ -93,15 +103,21 @@
         width: 100%;
         height: 100%;
         position: relative;
+        
+    }
+    .banner_box{
+        width: calc(100% + 20px);
+        height: 100%;
+        overflow-y: scroll;
     }
     .main_banner{
         width: 100%;
         height: 100%;
-        background-image: url(../img/banner/main_banner_02.jpg);
         background-size: cover;
         background-position:right;
         background-repeat: no-repeat;
     }
+    
     .reco_news_box{
         background-color: rgba(0, 0, 0, 0.37);
         width: 350px;
@@ -113,6 +129,9 @@
         color: #fff;
         
     }
+    .main_banner_nav{
+    display: block;
+}
     .reco_news_box>div{
       margin-bottom: 30px;
     }
@@ -168,6 +187,23 @@
         
     }
     
+    .main_banner_nav{
+        width: 20px;
+        position: fixed;
+        top: 40%;
+        left: 20px;
+        z-index: 999;
+    }
+    .main_banner_nav li{
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 20px 0;
+        
+    }
     
     
 }   

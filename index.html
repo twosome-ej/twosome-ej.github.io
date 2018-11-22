@@ -35,7 +35,8 @@
 </head>
 
 <body>
-    <header>
+   
+   <header>
         <h1>
             <img src="./img/twosome-logo-w.png" alt="투썸플레이스 대표 로고">
         </h1>
@@ -93,10 +94,17 @@
             </dl>
         </nav>
     </header>
-    <section class="main_section">
-       <article class="main_banner">
+    <nav class="main_banner_nav">
+        <ul>
            
-       </article>
+        </ul>
+    </nav>
+    <section class="main_section">
+      <div class="banner_box">
+           <article class="main_banner banner1"></article>
+           <article class="main_banner banner2"></article>
+           <article class="main_banner banner3"></article>
+       </div>
         <section class="reco_news_box">
         <div class="reco_wrapper clearfix">
             <h2>Recommendation</h2>
@@ -154,6 +162,24 @@
 
 
     <script type="text/javascript" src="js/nav.js"></script>
+    <script>
+     function scrollmove(e){
+         var this_index = $(e).index()+1;
+         $('.banner_box').animate({
+        scrollTop: $(".banner"+this_index).offset().top},
+        'slow');
+         $('.main_banner_nav li').not(e).css({backgroundColor:'#fff'});
+         $(e).css({backgroundColor:'#dd0330'});
+     }
+        var banner_lang = $('.main_banner').length;
+       
+        
+        for(i=0;i<banner_lang;i++){
+            
+            $('.main_banner_nav ul').append('<li onclick="scrollmove(this);"></li>');
+        }
+
+    </script>
 </body>
 
 </html>

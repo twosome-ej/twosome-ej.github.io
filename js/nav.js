@@ -3,14 +3,14 @@
 $( document ).ready(function() {
   $('.menu button').click(function(){
       console.log('menu is clicked!');
-      $('nav').animate({left:'20%'});
+      $('header nav').animate({left:'20%'});
       $('.background-dark').css({display:'block'});
       $('.background-dark').click(function(){
-        $('nav').animate({left:'100%'});          
+        $('header nav').animate({left:'100%'});          
         $('.background-dark').css({display:'none'});
       });
        $('.right_icon').click(function(){
-        $('nav').animate({left:'100%'});          
+        $('header nav').animate({left:'100%'});          
         $('.background-dark').css({display:'none'});
       });
       
@@ -42,5 +42,6 @@ $( document ).ready(function() {
           $('header').css({backgroundColor:'transparent'});
       }
   });
+    
     
 });
