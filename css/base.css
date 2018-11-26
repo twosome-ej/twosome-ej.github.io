@@ -138,13 +138,15 @@ footer address p{margin: 20px 0;line-height: 20px;}
 
     }
 
-    header .util button {
+    header .util .login_button {
         height: 35px;
+        line-height: 35px;
         color: #fff;
+        display:inline-block
     }
 
-    header .util button .user_img {
-        display: none;
+    header .util .user_img {
+        display:none;
     }
     
     

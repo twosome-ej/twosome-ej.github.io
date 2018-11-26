@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/main.css">
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    
     <!--[if lte IE 9]>
 			<script src="ie/html5shiv/src/html5shiv.js"></script>
 			<script src="ie/ie7/IE8.js"></script>
@@ -32,67 +33,15 @@
     <title>[eunjin]투썸플레이스 - Premium Dessert Cafe A Twosome Place.</title>
 
 
+
+
+
 </head>
 
 <body>
    
-   <header>
-        <h1>
-            <img src="./img/twosome-logo-w.png" alt="투썸플레이스 대표 로고">
-        </h1>
-        <div class="menu">
-            <button type="button"><img src="./img/icon/menu.svg" alt="메뉴"></button>
-        </div>
-        <div class="background-dark"></div>
-        <nav>
-            <div class="util clearfix">
-                <button class="right_icon"><img src="./img/icon/right-arrow.svg" alt=""></button>
-                <button class="login_button"><img src="./img/icon/user.svg" alt="로그인 또는 마이페이지 이동 버튼" class="user_img"><span>로그인 하세요</span></button>
-            </div>
-            <dl>
-                <dt class="navi">브랜드스토리</dt>
-                <dd>브랜드이야기</dd>
-                <dd>커피이야기</dd>
-                <dd>디저트</dd>
-                <dd>브랜드 필름</dd>
-            </dl>
-            <dl style="width:100px;">
-                <dt class="navi">메뉴</dt>
-                <dd>신제품</dd>
-                <dd>디저트</dd>
-                <dd>케이트</dd>
-                <dd>커피&amp;음료</dd>
-                <dd>델리</dd>
-                <dd>MD</dd>
-                <dd>영양성분표</dd>
-            </dl>
-            <dl>
-                <dt class="navi">로스터리카페</dt>
-                <dd>신논현점</dd>
-            </dl>
-            <dl>
-                <dt class="navi">매장정보</dt>
-                <dd>매장찾기</dd>
-            </dl>
-            <dl>
-                <dt class="navi">이벤트 &amp; JOY</dt>
-                <dd>이벤트</dd>
-                <dd>멤버쉽 제휴카드</dd>
-            </dl>
-            <dl style="width:110px;">
-                <dt class="navi">가맹정보</dt>
-                <dd>창업정보 및 절차</dd>
-                <dd>창업설명회</dd>
-                <dd>온라인 창업 상담</dd>
-                <dd>정보공개서</dd>
-                <dd>FAQ</dd>
-                <dd>가맹점 금융상품</dd>
-            </dl>
-            <dl style="width:140px;">
-                <dt class="navi">단체구매</dt>
-                <dd>대량구매 MD상품 안내</dd>
-            </dl>
-        </nav>
+   <header id="aaa">
+    
     </header>
     <nav class="main_banner_nav">
         <ul>
@@ -183,6 +132,17 @@
         }
 
     </script>
+    
+<script type="text/javascript">
+
+$(document).ready( function() {
+
+	$("#aaa").load("./header.html");
+
+
+});
+
+</script>
 </body>
 
 </html>
