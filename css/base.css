@@ -4,7 +4,8 @@
 
  html,body{
         
-        width: 100%;
+    width: 100%;
+    
     }
 
 .background-dark{display: none;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);position: fixed;top: 0;left: 0;z-index: 99}
@@ -31,6 +32,7 @@ select {
         z-index: 9999;
         top: 0;
         left: 0;
+        transition: all 0.5s;
 }
 
 
@@ -245,12 +247,13 @@ footer address p{margin: 20px 0;line-height: 20px;}
 
     }
 
-    header .util button {
+    header .util .login_button {
         height: 35px;
         color: #fff;
+        display: block;
     }
 
-    header .util button .user_img {
+    header .util .user_img {
         display: none;
     }
     
@@ -319,7 +322,7 @@ footer address p{margin: 20px 0;line-height: 20px;}
         padding: 10px;
         margin: 0 30px;
     }
-    header .util button img {
+    header .util .login_button img {
         display: block;
         height: 15px;
         float: left;

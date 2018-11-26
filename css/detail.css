@@ -1,0 +1,46 @@
+header{
+    background-color: #333;
+}
+.section{
+    margin-top: 75px;
+}
+.section_head{
+    height: 120px;
+    line-height: 120px;
+    text-indent: 15px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+}
+.section_head h1{
+    font-size: 40px
+}
+
+.section article{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.section article img{
+    margin-bottom: 60px;
+}
+.cf_script{
+    line-height: 35px;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 40px
+}
+
+/*mobile*/
+
+@media screen and (max-width: 599px) {
+
+}
+/*tab*/
+@media screen and (min-width:600px) and (max-width:1023px) {
+
+}
+/*pc*/
+@media screen and (min-width:1024px) {
+
+    
+}

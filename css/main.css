@@ -9,6 +9,9 @@
         background-position: center;
         
     }
+.banner_cf{
+    height: auto;
+}
 .main_banner_nav{
     display: none;
 }

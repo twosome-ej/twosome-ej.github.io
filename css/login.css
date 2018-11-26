@@ -2,6 +2,7 @@
 header{background-color: #333}
 .login_wrapper{
     padding: 15px;
+    
 }
 .login_wrapper .logo_area{
     margin-top: 130px;
@@ -18,7 +19,7 @@ header{background-color: #333}
     font-weight: 100;
 }
 .login_wrapper .description{
-    margin-top: 80px;
+    margin-top: 65px;
 }
 
 .login_wrapper .description h1{
@@ -51,6 +52,7 @@ header{background-color: #333}
     height: 45px;
     line-height: 45px;
     margin-bottom: 15px;
+    background-color: transparent
 }
 #login_form #pw{
 }
@@ -76,15 +78,71 @@ header{background-color: #333}
 /*mobile*/
 
 @media screen and (max-width: 599px) {
-    
+    .login_wrapper{
+   
+    background-color: #fafafa;
+}
 }
 /*tab*/
 @media screen and (min-width:600px) and (max-width:1023px) {
+    .login_wrapper{
     
+    background-color: #fafafa;
+}
 }
 /*pc*/
 @media screen and (min-width:1024px) {
     .login_wrapper{
-        width: 500px;
+        width: 100%;
+        height: 800px;;
+        position: relative;
     }
+    .login_wrapper section{
+        width: 350px;
+        background-color: #fff;
+        position: absolute;
+        top: 200px;
+        right: 50%;
+        margin-right: -500px;
+        
+        padding: 20px;
+        box-sizing: border-box;
+        transition: all 0.5s;
+    }
+    body{
+        background-image: url(../img/login_bg.jpg);
+            background-size:cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .login_wrapper .logo_area{
+        margin: 20px;
+    }
+    .login_wrapper .description {
+        position: absolute;
+        margin-left: -700px;
+        margin-top: -50px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 30px 60px ;
+        width: 600px;
+        z-index: -1;
+        transition: all 0.5s;
+            
+    }
+    .login_wrapper .description h1{
+        font-size: 30px;
+        line-height: 40px;
+        color: #fff;
+            
+    }
+    .login_wrapper .description span{
+        color: #fff;
+            
+    }
+    .login_wrapper .find_join{
+        font-size: 12px;
+            
+    }
+    
 }
