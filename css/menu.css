@@ -1,5 +1,8 @@
+.section article{
+    padding-bottom: 40px;
+}
 .tab{
-    width: 600px;
+   
     margin: 30px auto;
 }
 .tab li{
@@ -7,9 +10,11 @@
     height: 35px;
     line-height: 35px;
    text-align: center;
-    padding: 0 25px;
+    padding: 0 35px;
     cursor: pointer;
     border-bottom: 2px solid #444;
+     padding: 0 25px;
+    font-size: 14px;
 }
 .tab{
     
@@ -47,4 +52,110 @@
 .price{color: #777;font-size:13px;}
 .price:after{
     content: "￦";
+}
+.ready_text{
+    margin: 0px
+}
+.select_menu{display: none;}
+
+
+/*mobile*/
+
+@media screen and (max-width: 599px) {
+        .section_head{
+        height: 60px;
+        line-height: 60px;
+    }
+    .section_head h1{
+       font-size: 25px;
+    }
+    
+    .menu_list{
+     margin: 40px auto;
+    width: 100%;
+}
+    .menu_wrap{
+    
+    margin-right: 0px;
+    padding: 10px;
+    width: 50%;
+    height: 240px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    
+   
+}
+    .tab{
+        width: 80%!important;
+    }
+    .tab li{
+    float: none;
+        width: 100%;
+        
+    height: 40px;
+    line-height: 40px;
+   text-align: center;
+    padding: 0 35px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd!important;
+     padding: 0 25px;
+    font-size: 14px;
+}
+     .select_menu{
+         width: 100%;
+      display: block;  
+    height: 45px;
+    line-height: 45px;
+   text-align: center;
+    padding: 0 35px;
+    cursor: pointer;
+     padding: 0 25px;
+    font-size: 14px;
+    border: 1px solid #666!important;
+         background-image: url(../img/icon/down-arrow.png);
+         background-repeat: no-repeat;
+         background-position: 95%;
+         background-size:  5%;
+        
+}
+    .tab_ul{
+    border: 1px solid #ddd!important;;
+        
+    }
+    
+
+}
+/*tab*/
+@media screen and (min-width:600px) and (max-width:1023px) {
+    .section_head{
+        height: 60px;
+        line-height: 60px;
+    }
+    .section_head h1{
+       font-size: 25px;
+    }
+    
+    .menu_list{
+     margin: 40px auto;
+    width: 100%;
+}
+        .menu_wrap{
+    
+    margin-right: 0px;
+    padding: 10px;
+    width: 25%;
+    height: 240px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    
+   
+}
+    
+
+    
+}
+/*pc*/
+@media screen and (min-width:1024px) {
+
+    
 }

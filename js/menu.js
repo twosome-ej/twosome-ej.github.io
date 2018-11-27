@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     
-    var drink = [{name:'샹그리아 에이드',
+    var menu_drink = [{name:'샹그리아 에이드',
                   img:'../img/menu/drink/2106_small_img.jpg',
                   price:'6000',
                   desciption:'레드 와인 풍미에 신선한 생과일을 더해 청량하게 즐기는 무알코올 상그리아 에이드'},
@@ -26,7 +26,7 @@ $( document ).ready(function() {
                   desciption:'그린키위와 바나나가 블렌딩 된 주스'},
                  
                 ];
-    var esso = [{name:'카페오트라떼',
+    var menu_esso = [{name:'카페오트라떼',
                   img:'../img/menu/esso/2142_small_img.jpg',
                   price:'5800',
                   desciption:'귀리우유와 에스프레소가 만나 겨울 디저트와 잘 어울리는 고소한 라떼'},
@@ -53,63 +53,113 @@ $( document ).ready(function() {
                  
                  
                 ];
-    var blend = [];
-    var tea = [];
+    var menu_blend = [];
+    var menu_tea = [];
     
-    
+     
     
     $('.tab li').click(function(){
-        
-        $(this).css({borderColor:'#dd0330'});
-        $('.tab li').not(this).css({borderColor:'#444'});
+       
         var click_tab_txt = $(this).attr('class');
-        
+        $('.tab li').not(this).css({borderColor:'#444'});
+        $(this).css({borderColor:'#dd0330'});
         $('.menu_list').empty();
+            switch(click_tab_txt){
+                    
+                case 'coffee_all' : 
+                   drink();
+                    esso();
+                    break;
+                    
+               case 'menu_drink' : 
+                    drink();
+                    break;
+                    
+               case 'menu_esso' : 
+                    esso();
+                    break;
+                    
+               case 'menu_blend' : 
+                    blend();
+                    break;
+                    
+               case 'menu_tea' : 
+                    tea();
+                    
+                    break;
+                    
+                    
+            }
+
         
-        switch(click_tab_txt){
-                
-            case 'menu_all' : 
-                menu_drink();
-                menu_esso();
-                break;
-                
-           case 'menu_drink' : 
-                menu_drink();
-                break;
-                
-           case 'menu_esso' : 
-                menu_esso();
-                break;
-                
-           case 'menu_blend' : 
-                
-                break;
-                
-           case 'menu_tea' : 
-                
-                break;
-                
-                
+        if($('.menu_wrap').length == 0){
+            $('.menu_list').append('<div class="ready_text">아직 준비중이예요</div>');
+        }else{
+            
+            
         }
+        
+        
         
     });
-    $('.menu_all').trigger('click');
+    $('.tab li').eq(0).trigger('click');
     
-    function menu_drink(){
+    
+    
+    function drink(){
         
-        for(i=0;i<drink.length;i++){
+        for(i=0;i<menu_drink.length;i++){
         
-        $('.menu_list').append('<div class="menu_wrap"><img src="'+ drink[i].img+'" alt="'+drink[i].desciption +'" /><span class="menu_name">'+ drink[i].name +'</span><span class="price">'+ drink[i].price +'</span></div>');
+        $('.menu_list').append('<div class="menu_wrap"><img src="'+ menu_drink[i].img+'" alt="'+menu_drink[i].desciption +'" /><span class="menu_name">'+ menu_drink[i].name +'</span><span class="price">'+ menu_drink[i].price +'</span></div>');
         }
     
     }
-     function menu_esso(){
+     function esso(){
         
-        for(i=0;i<esso.length;i++){
+        for(i=0;i<menu_esso.length;i++){
         
-        $('.menu_list').append('<div class="menu_wrap"><img src="'+ esso[i].img+'" alt="'+esso[i].desciption +'" /><span class="menu_name">'+ esso[i].name +'</span><span class="price">'+ esso[i].price +'</span></div>');
+        $('.menu_list').append('<div class="menu_wrap"><img src="'+ menu_esso[i].img+'" alt="'+menu_esso[i].desciption +'" /><span class="menu_name">'+ menu_esso[i].name +'</span><span class="price">'+ menu_esso[i].price +'</span></div>');
+        }
+    
+    }
+     function blend(){
+        
+        for(i=0;i<menu_blend.length;i++){
+        
+        $('.menu_list').append('<div class="menu_wrap"><img src="'+ menu_blend[i].img+'" alt="'+menu_blend[i].desciption +'" /><span class="menu_name">'+ menu_blend[i].name +'</span><span class="price">'+ menu_blend[i].price +'</span></div>');
+        }
+    
+    }
+     function tea(){
+        
+        for(i=0;i<menu_tea.length;i++){
+        
+        $('.menu_list').append('<div class="menu_wrap"><img src="'+ menu_tea[i].img+'" alt="'+menu_tea[i].desciption +'" /><span class="menu_name">'+ menu_tea[i].name +'</span><span class="price">'+ menu_tea[i].price +'</span></div>');
         }
     
     }
     
+});
+
+//menu_tab_js
+
+var sum_tab_w =0;
+for(tab_index=0;tab_index<$('.tab li').length;tab_index++){
+    var tab_w = $('.tab li').eq(tab_index).outerWidth();
+    var sum_tab_w = sum_tab_w + parseInt(tab_w) ;
+   
+}
+$('.tab').css({width:sum_tab_w+3});
+
+$('.tab_ul').hide();
+$('.select_menu').click(function(){
+$('.tab_ul').slideToggle();
+    
+});
+
+$('.tab_ul li').click(function(){
+   
+    var click_tab_text = $(this).text();
+    $('.select_menu').text(click_tab_text);
+    $('.tab_ul').hide();
 });

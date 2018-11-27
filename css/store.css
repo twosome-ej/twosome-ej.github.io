@@ -1,0 +1,93 @@
+@charset 'euc-kr';
+
+/* 매장검색 */
+.map-search{padding:15px 0 15px 80px;overflow:hidden;}
+.map-search:after{content:"."; display:block; height:0px; clear:both; visibility:hidden;}
+.map-search .map-cont{float:left;}
+.map-search .search-cont{float:left; width:290px; margin-left:105px; padding-top:30px;}
+.map-search .search-cont dt{padding-bottom:10px; border-bottom:1px solid #7a7877; }
+.map-search .search-cont dd{margin-top:20px;}
+.map-search .search-cont label {line-height:15px;}
+
+.map-cont .sch00{background:url('/img/store/img_map00.png') no-repeat;} /*디폴트*/
+.map-cont .sch01{background:url('/img/store/img_map01.png') no-repeat;} /*서울*/
+.map-cont .sch02{background:url('/img/store/img_map02.png') no-repeat;} /*경기도*/
+.map-cont .sch03{background:url('/img/store/img_map03.png') no-repeat;} /*인천*/
+.map-cont .sch04{background:url('/img/store/img_map04.png') no-repeat;} /*강원도*/
+.map-cont .sch05{background:url('/img/store/img_map05.png') no-repeat;} /*충청남도*/
+.map-cont .sch06{background:url('/img/store/img_map06.png') no-repeat;} /*충청북도*/
+.map-cont .sch07{background:url('/img/store/img_map07.png') no-repeat;} /*대전*/
+
+.map-cont .sch08{background:url('/img/store/img_map08.png') no-repeat;} /*전라북도*/
+.map-cont .sch09{background:url('/img/store/img_map09.png') no-repeat;} /*전라남도*/
+.map-cont .sch10{background:url('/img/store/img_map10.png') no-repeat;} /*광주*/
+.map-cont .sch11{background:url('/img/store/img_map11.png') no-repeat;} /*경상남도*/
+.map-cont .sch12{background:url('/img/store/img_map12.png') no-repeat;} /*경상북도*/
+.map-cont .sch13{background:url('/img/store/img_map13.png') no-repeat;} /*부산*/
+.map-cont .sch14{background:url('/img/store/img_map14.png') no-repeat;} /*대구*/
+.map-cont .sch15{background:url('/img/store/img_map15.png') no-repeat;} /*울산*/
+.map-cont .sch16{background:url('/img/store/img_map16.png') no-repeat;} /*제주도*/
+
+.view-list{ position:relative;}
+
+.view-list .prev{position:absolute; left:0; top:75px; border:none;background:none}
+.view-list .next{position:absolute; right:0px;top:75px;border:none;background:none}
+.thumb-list{zoom:1; position:relative; padding:35px 0 0 40px; height:170px; width:510px;overflow:hidden;}
+.thumb-list:after{content:"."; display:block; height:0px; clear:both; visibility:hidden;}
+.thumb-list ul{overflow:hidden;}
+
+.thumb-list ul li{float:left;height:160px;  margin-right:15px;}
+.thumb-list ul li a {display:block;text-decoration:none}
+.thumb-list ul li a img{width:198px; height:118px; display:block; border:1px solid #e6e6e6;}
+.thumb-list ul li.on a img{  border:1px solid #9f041e;}
+.thumb-list ul li a span{width:200px;line-height:0.5; display:block; text-align:center; padding-top:10px; color:#555; font-weight:bold;}
+.thumb-list ul li.on a span{color:#9f041e;}
+.thumb-view{ border-top:1px solid #7a7877; padding:30px 0}
+.thumb-view li {text-align:center;}
+.thumb-view > li > .flagship1 .area1 {position:relative;}
+.thumb-view > li > .flagship1 .area1 .btn_01 {position:absolute;right:58px;top:42px;}
+.thumb-view > li > .flagship1 .area1 .btn_02 {position:absolute;left:258px;bottom:43px;} 
+/*.thumb-view img{width:710px; border:1px solid #e6e6e6;}*/
+
+/*.gallery_list{border-top:2px solid #7e7e7e; border-bottom:2px solid #e5e5e5}
+.gallery_list li{width:170px; height:180px; float:left; padding:20px 20px 0 0; border-bottom:1px solid #e2e2e2}
+.gallery_list dt img{width:170px; height:120px }
+.gallery_list .tit{display:block; padding:10px 0 7px;}
+.gallery_list span.photo{padding-left:20px; display:inline-block; height:12px; line-height:12px; background:url('/images/ico/ico_photo.gif') no-repeat left 0px}
+.gallery_list span.date{margin-left:9px; padding-left:10px;display:inline-block; background:url('/images/ico/bar_btn.gif') no-repeat left 1px}
+.gallery_list li.noList{ width:100%; text-align:center; height:110px; padding:90px 0px 0 0;}
+*/
+
+.newOpen {overflow:hidden;width:100%;margin-top:30px;}
+.newOpen > li {float:left;margin:0 10px 35px 0;} /* 2014-05-29 수정 */
+.newOpen > li.no {margin-right:0;}
+.newOpen > li.last {margin-bottom:0;}
+.newOpen > li > div.storename {display:table;width:228px;height:70px;line-height:20px;letter-spacing:-2px;font-size:15px;color:#9c071a;font-weight:bold;text-align:center;border-left:1px solid #bdbdbd;border-right:1px solid #bdbdbd;}/* 2017-01-10 수정 */
+.newOpen > li > div.storename .name {display:table-cell;padding:0 10px;position:relative;top:2px;height:70px;vertical-align:middle;}/* 2017-01-10 추가 */
+.newOpen > li > ul {border-bottom:1px solid #bdbdbd;border-left:1px solid #bdbdbd;border-right:1px solid #bdbdbd;padding-bottom:9px;height:35px;}
+.newOpen > li > ul > li {height:27px;line-height:27px;padding:0 10px;}
+.newOpen > li > ul > li > div{overflow:hidden;width:208px;border-top:1px solid #bdbdbd;clear:both;padding-top:8px;} /* 2014-05-29 수정 */
+.newOpen > li > ul > li > div > span {float:left;}
+.newOpen > li > ul > li > div > span > strong{font-size:11px;}
+.newOpen > li > ul > li > div > p {float:right;}
+.newOpen > li > ul > li > div > p a {padding-left:8px;padding-right:8px;}
+/* 2017-01-10(2) 수정 start */
+.store-type {display:inline-block;margin-left:7px;width:33px;height:30px;vertical-align:middle;background:url('/img/store/ico_store_type.png') no-repeat;}
+.store-type span {display:block;height:0;width:0;font-size:0;line-height:0;margin:0;padding:0;overflow:hidden;}
+.store-type.fd {background-position:0 0;}
+.store-type.dt {background-position:-50px 0;}
+.store-type2 {display:inline-block;position:relative;padding-left:44px;margin-right:4px;height:24px;line-height:38px;color:#383a38;background:url('/img/store/ico_store_type2.png') no-repeat;}
+.store-type2 + .store-type2:after {content:"";display:block;position:absolute;top:12px;left:0;width:1px;height:11px;background-color:#a0a0a0;}
+.store-type2.fd {background-position:0 0;}
+.store-type2.dt {background-position:0 -50px;}
+
+.store-view h5.h5-txt.h5-space {float:left;}
+.store-view .store-type-wrap {float:left;margin:20px 0 0px 10px;}
+.store-view .store-type-wrap:after {content:"";display:block;clear:both;}
+/* //2017-01-10(2) 수정 end */
+ 
+ 
+ div.twosomebg{width:230px;height:29px;} /* 2014-05-29 수정 */
+ 
+.skipMap a {position: absolute;z-index: 500;left: 0;top: -10000px;display: block;width: 95%;text-align: center;font-size: 13px;}
+.skipMap a:hover, .skipMap a:focus, .skipMap a:active{position: static; padding: 10px; font-weight: 600; color: #fff; background: #424242; z-index: 500}
